@@ -69,7 +69,7 @@ email.proto
 
 Таким образом реализуется механизм Unary RPC.
 
-(вставить скриншот файла email.proto)
+[Cкриншот email.proto](https://raw.github.com/MakhoninaAV/-./main/5359542285860803541.jpg)
 
 ---
 
@@ -86,7 +86,7 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. email.proto
 
 Эти файлы используются для взаимодействия клиента и сервера через gRPC.
 
-(вставить скриншот генерации файлов или структуры проекта)
+[Cкриншот подключения к серверу](https://raw.github.com/MakhoninaAV/-./main/5359542285860803544.jpg)
 
 ---
 
@@ -130,7 +130,7 @@ grpc.insecure_channel('localhost:50051')
 
 Сервер обрабатывает запрос и возвращает ответ, который выводится в консоль клиента.
 
-(вставить скриншот работы клиента с вводом данных)
+[Работа клиента с вводом данных](https://github.com/MakhoninaAV/-./blob/main/5359542285860803564.jpg)
 
 ---
 
