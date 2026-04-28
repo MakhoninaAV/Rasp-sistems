@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package lab13;
+
+service TaskService {
+  rpc GenerateResetToken (EmailRequest) returns (TokenResponse);
+  rpc CalculateAge (BirthDateRequest) returns (AgeResponse);
+  rpc SortWords (WordsRequest) returns (WordsResponse);
+}
+
+message EmailRequest {
+  string email = 1;
+}
+message TokenResponse {
+  string message = 1;
+}
+
+message BirthDateRequest {
+  string birth_date = 1;
+}
+message AgeResponse {
+  int32 age = 1;
+}
+
+message WordsRequest {
+  string text = 1;
+}
+message WordsResponse {
+  string sorted_text = 1;
+}
