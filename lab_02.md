@@ -40,7 +40,7 @@ curl -v http://rbc.ru 2>&1 | head -40
 ```
 
 **Результат:**
-![HTTP-анализ](screenshots/01_HTTP-анализ%20rbc.ru.png)
+![HTTP-анализ](https://github.com/MakhoninaAV/-/blob/main/01_HTTP-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20rbc.ru.png)
 
 **Анализ:** Сервер вернул код `307 Temporary Redirect` с заголовком `Location: https://www.rbc.ru/...`. Это перенаправление с HTTP на HTTPS для безопасности.
 
