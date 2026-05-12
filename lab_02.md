@@ -89,15 +89,15 @@ if __name__ == '__main__':
 ```
 
 **Запуск Flask:**
-![Flask запуск](screenshots/02_Запуск%20FLASK.png)
+![Flask запуск](https://github.com/MakhoninaAV/-/blob/main/02_%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA%20FLASK.png)
 
 **Тестирование (прямые запросы):**
 
 | Операция | Команда | Результат |
 |----------|---------|-----------|
-| GET все задачи | `curl http://127.0.0.1:5000/api/tasks` | ![2 задачи](screenshots/03_GET%20запрос%20(Вывод%20JSON%20со%20списком%20задач%20(2%20задачи)).png) |
-| POST задача | `curl -X POST -H "Content-Type: application/json" -d '{"title": "Сдать лабу", "status": "pending", "assignee": "Me"}' http://127.0.0.1:5000/api/tasks` | ![id 3](screenshots/04_POST%20запрос%20(Вывод%20JSON%20с%20новой%20задачей%20(id%203)).png) |
-| GET после POST | `curl http://127.0.0.1:5000/api/tasks` | ![3 задачи](screenshots/05_Добавление%20задачи%20(Вывод%20JSON%20с%203%20задачами).png) |
+| GET все задачи | `curl http://127.0.0.1:5000/api/tasks` | ![2 задачи](https://github.com/MakhoninaAV/-/blob/main/03_GET%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20(%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%20JSON%20%D1%81%D0%BE%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%BC%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%20(2%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8)).png) |
+| POST задача | `curl -X POST -H "Content-Type: application/json" -d '{"title": "Сдать лабу", "status": "pending", "assignee": "Me"}' http://127.0.0.1:5000/api/tasks` | ![id 3](https://github.com/MakhoninaAV/-/blob/main/04_POST%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20(%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%20JSON%20%D1%81%20%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B5%D0%B9%20(id%203)).png) |
+| GET после POST | `curl http://127.0.0.1:5000/api/tasks` | ![3 задачи](https://github.com/MakhoninaAV/-/blob/main/05_%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20(%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%20JSON%20%D1%81%203%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%D0%BC%D0%B8).png) |
 
 ---
 
@@ -110,7 +110,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-![Nginx active](screenshots/06_Nginx%20установлен%20и%20работает(active%20(running)).png)
+![Nginx active](https://github.com/MakhoninaAV/-/blob/main/06_Nginx%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%20%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82(active%20(running)).png)
 
 **Конфигурация** (`/etc/nginx/sites-available/api_proxy`):
 ```nginx
@@ -140,7 +140,7 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
-![Nginx test](screenshots/07_%20Конфиг%20Nginx.png)
+![Nginx test]()
 
 ---
 
@@ -148,12 +148,12 @@ sudo systemctl restart nginx
 
 | Операция | Команда | Результат |
 |----------|---------|-----------|
-| GET через Nginx | `curl http://localhost/api/tasks` | ![3 задачи](screenshots/07_%20Конфиг%20Nginx.png) |
-| POST через Nginx | `curl -X POST -H "Content-Type: application/json" -d '{"title": "Финальный тест", "status": "done", "assignee": "Boss"}' http://localhost/api/tasks` | ![id 4](screenshots/08_POST%20через%20Nginx%20(создать%20задачу).png) |
-| GET после POST | `curl http://localhost/api/tasks` | ![4 задачи](screenshots/09_Проверка%20добавления%20четвертой%20задачи.png) |
+| GET через Nginx | `curl http://localhost/api/tasks` | ![3 задачи](https://github.com/MakhoninaAV/-/blob/main/07_%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%20Nginx.png) |
+| POST через Nginx | `curl -X POST -H "Content-Type: application/json" -d '{"title": "Финальный тест", "status": "done", "assignee": "Boss"}' http://localhost/api/tasks` | ![id 4](https://github.com/MakhoninaAV/-/blob/main/08_POST%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20Nginx%20(%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83).png) |
+| GET после POST | `curl http://localhost/api/tasks` | ![4 задачи](https://github.com/MakhoninaAV/-/blob/main/09_%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%87%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D0%B9%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8.png) |
 
 **Логи Flask (прямые запросы + через Nginx):**
-![Логи](screenshots/10_Логи%20Flask.png)
+![Логи](https://github.com/MakhoninaAV/-/blob/main/10_%D0%9B%D0%BE%D0%B3%D0%B8%20Flask.png)
 
 Логи подтверждают: все запросы успешно обработаны, запросы через Nginx приходят с `HTTP/1.0`.
 
